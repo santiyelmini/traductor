@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --purple: #797ef6;
+    --white: #ffffff;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+}
+
+.traductorBox {
+    width: 500px;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.selectContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.selectInput {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.translateContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.translateArea {
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 130px;
+    border-color: none;
+}
+
+.iconsContainer {
+    padding: 10px 5px 5px;
+}
+
+.bx {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.bx:nth-child(2) {
+    margin-left: 10px;
+}
+
+.bx:hover {
+    color: #323232;
+}
+
+.translateBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--white);
+    transition: transform 100ms;
+}
+
+.translateBtn:hover {
+    transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+    .traductorBox {
+        width: 100%;
+    }
+    .translateContainer {
+        flex-direction: column;
+    }
+    .inputContainer:nth-child(2) {
+        margin-top: 20px;
+    }
+}
